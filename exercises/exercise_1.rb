@@ -15,3 +15,19 @@ burnaby = Store.create(
   womens_apparel: true,
   created_at: Time.now(),
 )
+
+richmond = Store.create(
+  name: "Richmond",
+  annual_revenue: 1260000,
+  mens_apparel: false,
+  womens_apparel: true,
+  created_at: Time.now(),
+)
+
+gastown = Store.create(
+  name: "Gastown",
+  annual_revenue: 190000,
+  mens_apparel: true,
+  womens_apparel: false,
+  created_at: Time.now(),
+)
