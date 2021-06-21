@@ -4,7 +4,6 @@ puts "Exercise 1"
 puts "----------"
 
 # Your code goes below here ...
-
 burnaby = Store.create(
   name: "Burnaby",
   annual_revenue: 300000,
