@@ -37,8 +37,7 @@ yaletown = Store.create(
   puts store.name
 end
 
-womens_stores = Store.where("annual_revenue > ?", 1000000)
-@womens_stores_less_than_1m = womens_stores.where(womens_apparel: true)
+@womens_stores_less_than_1m = Store.where("annual_revenue > ?", 1000000).where(womens_apparel: true)
 
 @womens_stores_less_than_1m.all.each do |store|
   puts store.name
