@@ -31,3 +31,5 @@ gastown = Store.create(
   womens_apparel: false,
   created_at: Time.now(),
 )
+
+puts Store.count
