@@ -10,3 +10,16 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "Please give a store name"
+@store_name = $stdin.gets.chomp
+
+store = Store.create(
+  name: @store_name,
+  created_at: Time.now(),
+)
+
+if store.errors.any?
+  store.errors.each do |attribute, message|
+    puts "#{attribute} #{message}"
+  end
+end
